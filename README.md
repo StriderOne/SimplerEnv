@@ -1,5 +1,12 @@
 # SimplerEnv: Simulated Manipulation Policy Evaluation Environments for Real Robot Setups
 
+UPDATED:
+
+```
+docker build -t simplerenv:latest .
+docker run -it --gpus all -p 8005:8000 -v ./checkpoints:/SimplerEnv/checkpoints simplerenv:latest /bin/bash
+```
+
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/simpler-env/SimplerEnv/blob/main/example.ipynb)
 
 ![](./images/teaser.png)
